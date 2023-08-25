@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <h1>Appointment Scheduler</h1>
+        <form action="create-appointment" method="post">
+        <!-- <form action = "http://localhost:5000/schedule" method="post"> -->
+            <p>
+                <p>Please select a doctor:</p>
+                <input type="radio" name="doctor" value="Strange" />
+                <label for="html">Strange</label><br>
+                <input type="radio" name="doctor" value="Who" />
+                <label for="html">Who</label><br>
+            </p>
+            <hr />
+            <p>
+                <p>Date of appointment:</p>
+                <p><input type="date" name="apptdate" /></p>
+            </p>
+            <hr />
+            <p>
+                <p>Start time:</p>
+                <input type="time" name="starttime" /></p>
+                <p>End time:</p>
+                <input type="time" name="endtime" /></p>
+            </p>
+            <p><input type="submit" value="Submit" /></p>
+        </form>   
+    </body>
+</html>
