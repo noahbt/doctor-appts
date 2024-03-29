@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 from flask import Flask
-from flask import jsonify
 from flask import request
 from flask import render_template
 from flask import Response
@@ -14,7 +13,7 @@ app = Flask(__name__, template_folder='templates')
 
 @app.route("/")
 def home():
-    return 'Welcome'
+    return render_template('welcome.html')
 
 @app.route("/create-appointment")
 def get_create_appointment():

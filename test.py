@@ -3,6 +3,14 @@ from datetime import datetime
 
 from schedule import Schedule, Appointment
 
+
+# tests
+# Implement an API to create an appointment, rejecting it if there's a conflict.
+# Implement an API to get all appointments within a time window for a specified doctor.
+# Implement an API to get the first available appointment after a specified time
+#  i.e. I'm a patient and I'm looking for the first available appointment
+
+
 test_sched = Schedule('noah', 8, 4)
 
 print(f'Created schedule: {test_sched.schedule}')

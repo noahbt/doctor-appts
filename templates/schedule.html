@@ -1,6 +1,10 @@
 <html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+    </head>
     <body>
         <h1>Appointment Scheduler</h1>
+        <a class="btn" href="/">Home</a>
         <form action="create-appointment" method="post">
         <!-- <form action = "http://localhost:5000/schedule" method="post"> -->
             <p>
